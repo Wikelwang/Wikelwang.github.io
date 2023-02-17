@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>QQ空间</title>
+
+	<!--meta tags -->
+	<meta charset="UTF-8">
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); }
+	</script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/default.css" type="text/css"  rel="stylesheet"/>
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.countdown.css" />
+    <link rel="stylesheet" href="css/lightbox.css">  
+	<link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+	<link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="renxi/default.css">
+<script type="text/javascript" src="renxi/jquery.min.js"></script>
+<script type="text/javascript" src="renxi/jscex.min.js"></script>
+<script type="text/javascript" src="renxi/jscex-parser.js"></script>
+<script type="text/javascript" src="renxi/jscex-jit.js"></script>
+<script type="text/javascript" src="renxi/jscex-builderbase.min.js"></script>
+<script type="text/javascript" src="renxi/jscex-async.min.js"></script>
+<script type="text/javascript" src="renxi/jscex-async-powerpack.min.js"></script>
+<script type="text/javascript" src="renxi/functions.js" charset="utf-8"></script>
+<script type="text/javascript" src="renxi/love.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<style type="text/css">
+<!--
+.STYLE1 {
+	color: #666666
+}
+-->
+
+/*a标签样式*/
+ *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            width: 120px;
+            height: 40px;
+            margin: 100px auto;
+            border: 1px solid #000;
+        }
+        
+        ul{
+            list-style: none;
+        }
+        
+        ul>li{
+            float: left;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .nav a{
+            display: block;
+            width: 120px;
+            height: 40px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: purple;
+        }
+
+        .nav a:hover{
+            background-color: orangered;
+        }
+</style>
+</head>
+
+<body>
+<div class="banner">
+
+<div class="header-w3layouts"> 
+		<!-- Navigation -->
+	
+		<div class="container">
+		<div class="header-bar"> 
+	<nav class="navbar navbar-default">
+			<div class="navbar-header navbar-left">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				</button>
+                <h3 style="color: #ed7567;">乖乖！</h3>
+				<h6 style="color: #e54073">芝麻不是草莓剔出来的</h3>
+				<h6 style="color: #84d7ec">生蚝熟了可以叫熟生蚝</h3>
+				<h6 style="color: #e93669;">核桃被门夹了就脏了，咱不吃了，我重新给你剥</h3>
+				<h6 style="color: #ef8a34;">你想我了的话：</h3>
+				<h6 style="color: #ef8a34;">非常愿意你给我发微信、打电话</h3>
+                <h4 style="color: #eb5 273;">-- 王凯--</h3>
+			</div>    
+	</div>
+		</nav> 
+	</div>
+
+	<div class="clearfix"> </div>
+</div>
+	</div>
+<div class="container">	
+</div>
+
+<!--//banner-->
+       	<div class="days-coming">
+		<div class="container">
+		<h3 class="title tittle">我们在一起已经：</h3>
+    <div id="elapseClock">
+    </div>
+    <script type="text/javascript">
+        function timeElapse(date) {
+            var current = Date();
+            var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
+            var days = Math.floor(seconds / (3600 * 24));
+            seconds = seconds % (3600 * 24);
+            var hours = Math.floor(seconds / 3600);
+            if (hours < 10) {
+                hours = "0" + hours;0 
+            }
+            seconds = seconds % 3600;
+            var minutes = Math.floor(seconds / 60);
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            seconds = seconds % 60;
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+            var result = " 第 <span class=\"data\">" + days + "</span> 天 <span class=\"data\">" + hours + "</span> 小时 <span class=\"data\">" + minutes + "</span> 分钟 <span class=\"data\">" + seconds + "</span> 秒";
+            $("#elapseClock").html(result);
+        }
+
+
+        var together = new Date();
+        together.setFullYear(2021, 0, 31); //时间年月日，注意月份是0-11
+        together.setHours(22);              //小时	
+        together.setMinutes(30);            //分钟
+        together.setSeconds(0);            //秒前一位
+        together.setMilliseconds(0);       //秒第二位
+
+        timeElapse(together);
+        setInterval(function () {
+            timeElapse(together);
+        }, 500);
+             
+    </script>
+		</div>
+	</div>
+
+
+		<!--照片墙-->
+	
+    <div class=" slider-photo">
+	<div class="container">
+	<h3 class="title clr">照片墙</h3>
+		<div class="col-md-12 couple">
+                <div id="Carousel" class="carousel slide">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel" data-slide-to="1"></li>
+                    <li data-target="#Carousel" data-slide-to="2"></li>
+                </ol>
+                 
+                <!-- Carousel items -->
+             <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row">
+                	  <div class="col-md-3 col-sm-3 col-xs-3 slidering"><div class="thumbnail"><img src="images/p1.jpg" alt="Image" style="max-width:100%;"></div></div>
+                	  <div class="col-md-3 col-sm-3 col-xs-3 slidering"><div class="thumbnail"><img src="images/p2.jpg" alt="Image" style="max-width:100%;"></div></div>
+                	  <div class="col-md-3 col-sm-3 col-xs-3 slidering"><div class="thumbnail"><img src="images/p3.jpg" alt="Image" style="max-width:100%;"></div></div>
+                	  <div class="col-md-3 col-sm-3 col-xs-3 slidering"><div class="thumbnail"><img src="images/p4.jpg" alt="Image" style="max-width:100%;"></div></div>
+                	</div><!--.row-->
+                </div><!--.item-->
+                 <div class="clearfix"> </div>
+                <div class="item">
+                	<div class="row">
+                		<div class="col-md-3 col-sm-3 col-xs-3 slidering"><div class="thumbnail"><img src="images/p5.jpg" alt="Image" style="max-width:100%;"></div></div>
+                		<div class="col-md-3 col-sm-3 col-xs-3 slidering "><div class="thumbnail"><img src="images/p6.jpg" alt="Image" style="max-width:100%;"></div></div>
+                		<div class="col-md-3 col-sm-3 col-xs-3 slidering"><div class="thumbnail"><img src="images/p7.jpg" alt="Image" style="max-width:100%;"></div></div>
+                		<div class="col-md-3 col-sm-3 col-xs-3 slidering"><div class="thumbnail"><img src="images/p8.jpg" alt="Image" style="max-width:100%;"></div></div>
+                	</div><!--.row-->
+                </div><!--.item-->
+                <div class="clearfix"> </div>
+                <div class="item">
+                	<div class="row">
+                		<div class="col-md-3 col-sm-3 col-xs-3 slidering"><div class="thumbnail"><img src="images/p4.jpg" alt="Image" style="max-width:100%;"></div></div>
+                		<div class="col-md-3 col-sm-3 col-xs-3 slidering"><div class="thumbnail"><img src="images/p2.jpg" alt="Image" style="max-width:100%;"></div></div>
+                		<div class="col-md-3 col-sm-3 col-xs-3 slidering"><div class="thumbnail"><img src="images/p1.jpg" alt="Image" style="max-width:100%;"></div></div>
+                		<div class="col-md-3 col-sm-3 col-xs-3 slidering"><div class="thumbnail"><img src="images/p3.jpg" alt="Image" style="max-width:100%;"></div></div>
+                	</div><!--.row-->
+                </div><!--.item-->
+                 <div class="clearfix"> </div>
+                </div><!--.carousel-inner-->
+                  <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                  <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+                </div><!--.Carousel-->
+                 
+		</div>
+		</div>
+	</div>
+<!--//container-->
+		<!--//slider sectionimages-->
+			<!-- gallery -->
+
+	
+	<!--下面是留言板-->
+<!--<div class="map-grid"><iframe src="">这个是显示留言内容的，暂时不用 </iframe>
+</div>-->  
+	<div class="contact" id="contact">
+   <div class="container"> 
+   <h3 class="title clr">留言板</h3>
+   <div class="contact-two-grids">
+<div class=" col-md-6 contact-icons">
+
+				<!--这里显示留言-->
+
+					<div class="clearfix"> </div>
+			</div>
+   <div class="col-md-6 contact-us">
+    <form action="#" method="post">
+							<div class="styled-input">
+								<textarea name="Message" placeholder="你想对我说......" required=""></textarea>
+							</div>	 
+								<div>
+							<div class="nav">
+       							 <ul>
+           							 <li><a href="404erro.html">发布</a></li>
+       							 </ul>
+    							</div>
+								</div>
+						</form>
+					  </div>
+       
+					<div class="clearfix"> </div>
+					</div>
+ 
+   				
+</div>
+ </div>
+				<!--footer-->
+			
+
+          </div>
+				</div>
+				</div>
+
+
+	<!--js working-->
+	<script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- //js  working-->
+
+			<!--  light box js -->
+		<script src="js/lightbox-plus-jquery.min.js"> </script> 
+		<!-- //light box js--> 
+		<!-- banner-->
+<script src="js/responsiveslides.min.js"></script>
+		<script>
+				$(function () {
+					$("#slider").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: true,
+						speed: 1000,
+						namespace: "callbacks",
+						before: function () {
+							$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+							$('.events').append("<li>after event fired.</li>");
+						}
+					});
+				});
+			</script>
+<!--// banner-->
+	<!--scripts-->
+	<script src="js/jquery.countdown.js"></script>
+	<!--countdowntimer-js-->
+	<script src="js/script.js"></script>
+	<!--countdowntimer-js-->
+	<!--//scripts-->
+	
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+</body>
+
+</html>
